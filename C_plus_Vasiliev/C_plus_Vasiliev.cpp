@@ -375,6 +375,108 @@ int main()
 
 	// ГЛАВА 3
 
+	// 1
+	const int SIZE = 5;
+	int arrOne[SIZE] = { 1,2,3,4,5 };
+	int arrTwo[SIZE] = { 1,2,3,4,5 };
+	for (int i = 0; i < SIZE; i++)
+	{
+		cout << i + 1 << ". " << arrOne[i] + arrTwo[i] << endl;
+	}
+
+	// 2
+	const int SIZE = 5;
+	int arr[SIZE] = { 1,2,3,4,5 };
+	int sum = 0;
+	for (int i = 0; i < SIZE; i++)
+	{
+		sum += pow(arr[i], 2);
+	}
+	cout << sum;
+
+	 3
+	const int SIZE = 2;
+	int arr[SIZE][SIZE] = {
+		{2, 2},
+		{2, 2}
+	};
+	int sum = 0;
+	for (int i = 0; i < SIZE; i++)
+	{
+		for (int j = 0; j < SIZE; j++) {
+			sum += pow(arr[i][j], 2);
+		}
+	}
+	cout << sum;
+
+	 4
+	const int SIZE = 3;
+	int matrix[SIZE][SIZE] = {
+		{1, 2, 3},
+		{4, 5, 6},
+		{7, 8, 9}
+	};
+	for (int i = 0; i < SIZE; i++) {
+		for (int j = 0; j < SIZE; j++) {
+			cout << matrix[i][j] << " ";
+		}
+		cout << endl;
+	}
+	for (int i = 0; i < SIZE; i++) {
+		for (int j = i + 1; j < SIZE; j++) {
+			swap(matrix[i][j], matrix[j][i]);
+		}
+	}
+	cout << endl << endl;
+	for (int i = 0; i < SIZE; i++) {
+		for (int j = 0; j < SIZE; j++) {
+			cout << matrix[i][j] << " ";
+		}
+		cout << endl;
+	}
+
+	// 5
+	const int SIZE = 3;
+	int matrix[SIZE][SIZE];
+
+	for (int i = 0; i < SIZE; i++) {
+		for (int j = 0; j < SIZE; j++) {
+			matrix[i][j] = rand() % 10; 
+		}
+	}
+
+	for (int i = 0; i < SIZE; i++) {
+		for (int j = 0; j < SIZE; j++) {
+			cout << matrix[i][j] << " ";
+		}
+		cout << endl;
+	}
+
+	int** newMatrix = new int* [SIZE];
+	for (int i = 0; i < SIZE; i++) {
+		newMatrix[i] = new int[SIZE];
+	}
+	for (int i = 0; i < SIZE; i++) {
+		for (int j = 0; j < SIZE; j++) {
+			newMatrix[j][i] = matrix[i][j];
+		}
+	}
+
+	cout << endl << endl;
+	for (int i = 0; i < SIZE; i++) {
+		for (int j = 0; j < SIZE; j++) {
+			cout << newMatrix[i][j] << " ";
+		}
+		cout << endl;
+	}
+
+	for (int i = 0; i < SIZE; i++) {
+		delete[] newMatrix[i];
+	}
+	delete[] newMatrix;
+	
+
+
 
 
 	system("pause>nul");
