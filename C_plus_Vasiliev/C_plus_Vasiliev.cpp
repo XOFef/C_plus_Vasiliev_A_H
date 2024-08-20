@@ -394,7 +394,7 @@ int main()
 	}
 	cout << sum;
 
-	 3
+	// 3
 	const int SIZE = 2;
 	int arr[SIZE][SIZE] = {
 		{2, 2},
@@ -409,7 +409,7 @@ int main()
 	}
 	cout << sum;
 
-	 4
+	// 4
 	const int SIZE = 3;
 	int matrix[SIZE][SIZE] = {
 		{1, 2, 3},
@@ -474,7 +474,138 @@ int main()
 		delete[] newMatrix[i];
 	}
 	delete[] newMatrix;
-	
+
+	// 6
+	const int SIZE = 3;
+	int matrix[SIZE][SIZE] = {
+		{1, 2, 3},
+		{4, 5, 6},
+		{7, 8, 9}
+	};
+	int sum = 0;
+	for (int i = 0; i < SIZE; i++) {
+		sum += matrix[i][i];
+		sum += matrix[i][SIZE - 1 - i];
+	}
+	cout << sum;
+
+
+	 7
+	const int SIZE = 6;
+	int arr[SIZE] = { 4, 5 ,11, 4, 4, 6 };
+	int index = arr[0], position;
+	for (int i = 0; i < SIZE; i++)
+	{
+		if (index < arr[i]) {
+			index = arr[i];
+			position = i;
+		}
+	}
+	cout << "Position: " << position << " | Number: " << index;
+
+	// 8
+	const int SIZE = 6;
+	int arr[SIZE] = { 4, 5 ,11, 4, 4, 6 };
+	int index, position,j = 0;
+	cin >> position;
+	for (int i = 0; i < position; i++)
+	{
+		if (j == SIZE - 1) j = 0;
+		index = arr[j];
+		arr[j] = arr[SIZE - 1 - j];
+		arr[SIZE - 1 - j] = index;
+		j++;
+	}
+	for (int i = 0; i < SIZE; i++)
+	{
+		cout << arr[i] << " ";
+	}
+
+	// 9
+	const int SIZE = 3;
+	int arr[SIZE][SIZE];
+	int num;
+	for (int i = 0; i < SIZE; i++)
+	{
+		for (int j = 0; j < SIZE; j++)
+		{
+			cin >> num;
+			arr[i][j] = num;
+		}
+
+	}
+	cout << endl << endl;
+	for (int i = 0; i < SIZE; i++)
+	{
+		for (int j = 0; j < SIZE; j++)
+		{
+			cout << arr[i][j] << " ";
+		}
+		cout << endl;
+	}
+
+
+	// 10
+	const int SIZE = 3;
+	int arr[SIZE][SIZE];
+	int num;
+	for (int i = 0; i < SIZE; i++)
+	{
+		for (int j = 0; j < SIZE; j++)
+		{
+			cin >> num;
+			arr[j][i] = num;
+		}
+	}
+	cout << endl << endl;
+	for (int i = 0; i < SIZE; i++)
+	{
+		for (int j = 0; j < SIZE; j++)
+		{
+			cout << arr[i][j] << " ";
+		}
+		cout << endl;
+	}
+
+	// 11
+	const int SIZE = 3;
+	int matrix[SIZE][SIZE] = {
+		{1, 0, 1},
+		{0, 1, 0},
+		{1, 0, 1}
+	};
+
+	// 13
+	char arr[100] = "Hello world!";
+	int a = strlen(arr);
+	for (int i = 0; arr[i]; i++)
+	{
+		cout << arr[a-1];
+		a--;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
