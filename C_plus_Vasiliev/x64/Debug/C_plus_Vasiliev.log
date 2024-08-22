@@ -1,5 +1,3 @@
 ﻿  C_plus_Vasiliev.cpp
 C:\Users\reter\source\repos\C_plus_Vasiliev\C_plus_Vasiliev\C_plus_Vasiliev.cpp(47,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Users\reter\source\repos\C_plus_Vasiliev\C_plus_Vasiliev\C_plus_Vasiliev.cpp(580,8): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\reter\source\repos\C_plus_Vasiliev\C_plus_Vasiliev\C_plus_Vasiliev.cpp(581,13): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
   C_plus_Vasiliev.vcxproj -> C:\Users\reter\source\repos\C_plus_Vasiliev\x64\Debug\C_plus_Vasiliev.exe
