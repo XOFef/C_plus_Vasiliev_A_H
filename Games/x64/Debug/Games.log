@@ -1,0 +1,3 @@
+﻿  Games.cpp
+F:\Projects\Games\Games\Games.cpp(342,6): warning C4101: numb: неиспользованная локальная переменная
+  Games.vcxproj -> F:\Projects\Games\x64\Debug\Games.exe
