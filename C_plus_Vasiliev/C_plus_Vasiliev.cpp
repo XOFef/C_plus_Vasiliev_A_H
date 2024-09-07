@@ -40,6 +40,13 @@ using namespace std;
 //}
 
 
+// ГЛАВА 4
+
+// 1
+int factorial(int num);
+// 2
+int factorialTwo(int num);
+
 
 int main()
 {
@@ -819,59 +826,67 @@ int main()
 	//delete sizeTwo;
 	//delete sizeTree;
 
-	// 20
-	const int SIZE = 3;
-	int arr[SIZE][SIZE];
-	for (int i = 0; i < SIZE; i++)
-	{
-		for (int j = 0; j < SIZE; j++) {
-			arr[i][j] = rand() % 10;
-		}
-	}
+	//// 20
+	//const int SIZE = 3;
+	//int arr[SIZE][SIZE];
+	//for (int i = 0; i < SIZE; i++)
+	//{
+	//	for (int j = 0; j < SIZE; j++) {
+	//		arr[i][j] = rand() % 10;
+	//	}
+	//}
 
-	const int SIZEARR = 2;
-	int arrTwo[SIZEARR][SIZEARR];
-	int choice, indexOne = 0, indexTwo = 0;
-	cin >> choice;
-	for (int i = 0; i < SIZE; i++)
-	{
-		if (i == choice-1) {
-			continue;
-		}
-		for (int j = 0; j < SIZE; j++)
-		{
-			if (j == choice-1) {
-				continue;
-			}
-			arrTwo[indexOne][indexTwo] = arr[i][j];
-			indexTwo++;
-		}
-		indexOne++;
-		indexTwo = 0;
-	}
+	//const int SIZEARR = 2;
+	//int arrTwo[SIZEARR][SIZEARR];
+	//int choice, indexOne = 0, indexTwo = 0;
+	//cin >> choice;
+	//for (int i = 0; i < SIZE; i++)
+	//{
+	//	if (i == choice-1) {
+	//		continue;
+	//	}
+	//	for (int j = 0; j < SIZE; j++)
+	//	{
+	//		if (j == choice-1) {
+	//			continue;
+	//		}
+	//		arrTwo[indexOne][indexTwo] = arr[i][j];
+	//		indexTwo++;
+	//	}
+	//	indexOne++;
+	//	indexTwo = 0;
+	//}
 
-	for (int i = 0; i < SIZE; i++)
-	{
-		for (int j = 0; j < SIZE; j++) {
-			cout << arr[i][j] << " ";
-		}
-		cout << endl;
-	}
-	cout << endl << endl;
-	for (int i = 0; i < SIZEARR; i++)
-	{
-		for (int j = 0; j < SIZEARR; j++) {
-			cout << arrTwo[i][j] << " ";
-		}
-		cout << endl;
-	}
-
-
+	//for (int i = 0; i < SIZE; i++)
+	//{
+	//	for (int j = 0; j < SIZE; j++) {
+	//		cout << arr[i][j] << " ";
+	//	}
+	//	cout << endl;
+	//}
+	//cout << endl << endl;
+	//for (int i = 0; i < SIZEARR; i++)
+	//{
+	//	for (int j = 0; j < SIZEARR; j++) {
+	//		cout << arrTwo[i][j] << " ";
+	//	}
+	//	cout << endl;
+	//}
 
 
 
+	// ГЛАВА 4
+
+	//// 1
+	//int num;
+	//cin >> num;
+	//cout << factorial(num);
 
 
+	// 2
+	int num;
+	cin >> num;
+	cout << factorialTwo(num);
 
 
 
@@ -898,4 +913,41 @@ int main()
 
 	system("pause>nul");
 	return 0;
+}
+
+
+
+// ГЛАВА 4
+
+// 1
+int factorial(int num) {
+	int number = 1, result = 1;
+	for (int i = 0; i < num; i++, number++)
+	{
+		result *= number;
+	}
+	return result;
+}
+
+// 2
+int factorialTwo(int num) {
+	int  result = 1;
+	if (num % 2 != 0) {
+		for (int i = 3; i != num+2; i+=2)
+		{
+			result = result*i;
+		}
+		return result;
+
+	}
+	else if (num % 2 == 0) {
+		int number = 4, result = 1;
+		for (int i = 2; i != num+2; i += 2)
+		{
+			result = result * i;
+
+		}
+		return result;
+
+	}
 }

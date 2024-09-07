@@ -1,3 +1,4 @@
 ﻿  C_plus_Vasiliev.cpp
-C:\Users\reter\source\repos\C_plus_Vasiliev\C_plus_Vasiliev\C_plus_Vasiliev.cpp(47,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\reter\source\repos\C_plus_Vasiliev\C_plus_Vasiliev\C_plus_Vasiliev.cpp(54,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\reter\source\repos\C_plus_Vasiliev\C_plus_Vasiliev\C_plus_Vasiliev.cpp(953,1): warning C4715: factorialTwo: значение возвращается не при всех путях выполнения
   C_plus_Vasiliev.vcxproj -> C:\Users\reter\source\repos\C_plus_Vasiliev\x64\Debug\C_plus_Vasiliev.exe
