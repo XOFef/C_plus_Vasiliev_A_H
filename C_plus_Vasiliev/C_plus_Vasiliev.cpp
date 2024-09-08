@@ -46,6 +46,8 @@ using namespace std;
 int factorial(int num);
 // 2
 int factorialTwo(int num);
+//3
+int fibonachi(int num);
 
 
 int main()
@@ -883,13 +885,16 @@ int main()
 	//cout << factorial(num);
 
 
-	// 2
+	//// 2
+	//int num;
+	//cin >> num;
+	//cout << factorialTwo(num);
+
+
+	// 3
 	int num;
 	cin >> num;
-	cout << factorialTwo(num);
-
-
-
+	cout << fibonachi(num);
 
 
 
@@ -950,4 +955,23 @@ int factorialTwo(int num) {
 		return result;
 
 	}
+}
+
+// 3
+int fibonachi(int num) {
+	int result = 0, numOne = 0, numTwo = 1;
+	for (int i = 0; i < num-1; i++)
+	{
+		if (i % 2 != 0) {
+			result = numOne + numTwo;
+			numOne = result;
+		}
+
+		else if (i % 2 == 0) {
+			result = numOne + numTwo;
+			numTwo = result;
+		}
+
+	}
+	return result;
 }
