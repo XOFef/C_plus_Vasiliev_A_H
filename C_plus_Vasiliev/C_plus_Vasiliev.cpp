@@ -46,8 +46,11 @@ using namespace std;
 int factorial(int num);
 // 2
 int factorialTwo(int num);
-//3
+// 3
 int fibonachi(int num);
+// 4
+int binomenalKoef(int numOne, int numTwo);
+
 
 
 int main()
@@ -891,14 +894,17 @@ int main()
 	//cout << factorialTwo(num);
 
 
-	// 3
-	int num;
-	cin >> num;
-	cout << fibonachi(num);
+	//// 3
+	//int num;
+	//cin >> num;
+	//cout << fibonachi(num);
 
 
-
-
+	//// 4
+	//int numOne, numTwo;
+	//cin >> numOne;
+	//cin >> numTwo;
+	//cout << binomenalKoef(numOne, numTwo);
 
 
 
@@ -975,3 +981,15 @@ int fibonachi(int num) {
 	}
 	return result;
 }
+
+// 4
+int binomenalKoef(int numOne, int numTwo) {
+	if (numTwo > numOne) {
+		return false;
+	}
+	else {
+		int result = factorial(numOne) / (factorial(numTwo) * factorial(numOne - numTwo));
+		return result;
+	}
+}
+
